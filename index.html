@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<script>
+		function msgBox(mystring)
+			{
+			alert("Hello!")
+			alert(mystring)
+			}
+		function DoProduct(mystring1, mystring2)
+			{
+			var answer = mystring1 * mystring2
+			alert(answer)
+			}
+		function GetCrazy(colorchoice){
+			document.body.style.backgroundColor = colorchoice
+		}
+
+	</script>
+</head>
+<body>
+	<h1> Javascript Lab</h1>
+	<br>
+	<h3>Name Here</h3>
+	<form>
+		<input name="box1" type="text"/>
+		<input name="submit" type="button" value="Show Me" onClick="msgBox(form.box1.value)" />
+	</form>
+	<h1>Simple Math:</h1>
+	<form name="form2">
+		<input name="num1" type="text" size="5"/> multiply by 
+		<input name="num2" type="text" size="5"/>
+		<input name="submit2" type="button" value="Multiply" onclick="DoProduct(form.num1.value, form.num2.value)"/>
+	</form>
+	<h1>Color Buttons</h1>
+	<form name="form3">
+	<h3>Make the background:</h3>
+		<input type="button" value="Red" onClick="GetCrazy('red')">
+		<input type="button" value="Blue" onClick="GetCrazy('blue')">
+		<input type="button" value="Green" onClick="GetCrazy('green')">
+		<input type="button" value="Go Back" onClick="GetCrazy('Grey')">
+	</form>
+</body>
+</html>
